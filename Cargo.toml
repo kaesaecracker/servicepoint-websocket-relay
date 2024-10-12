@@ -1,0 +1,14 @@
+[package]
+name = "servicepoint-websocket-relay"
+version = "0.1.0"
+edition = "2021"
+repository = "https://github.com/kaesaecracker/servicepoint-websocket-relay.git"
+readme = "README.md"
+
+[dependencies]
+tokio = { version = "1.40", features = ["rt", "rt-multi-thread", "macros"] }
+tokio-tungstenite = "0.24"
+futures-util = "0.3"
+log = "0.4"
+env_logger = "0.11"
+clap = { version = "4.5.20" , features = ["derive"]}
